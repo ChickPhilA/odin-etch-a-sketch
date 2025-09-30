@@ -1,11 +1,21 @@
-.container {
+body {
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
+    align-items: center;
 
-    width: 900px;
-    height: 900px;
+    margin: 0px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+
+    width: 960px;
+    height: 960px;
 }
 
 /* Rows are contained within the container. */
