@@ -1,19 +1,17 @@
 .container {
     display: flex;
     justify-content: center;
-
-    margin: auto;
-    border: 2px solid black;
-
-
+    flex-direction: column;
     flex-wrap: wrap;
+
+    width: 900px;
+    height: 900px;
 }
 
 /* Rows are contained within the container. */
 .row {
     display: flex;
     flex-direction: row;
-    border: 1px solid black;
 }
 
 
