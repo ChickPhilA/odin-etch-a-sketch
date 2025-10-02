@@ -1,33 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
     margin: 0px;
 }
 
+#id {
+    text-align: center;
+}
+
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 2px solid black;
+    align-content: stretch;
 
-    width: 960px;
-    height: 960px;
+    border: 4px solid red;
+    border-radius: 10px;
+
+    height: 1028px;
+    width: 1028px;
 }
 
 /* Rows are contained within the container. */
 .row {
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
 }
-
 
 /* Boxes are contained within rows. */
 .square {
     border: 1px solid grey;
-    height: 12px;
-    width: 12px;
+    flex-grow: 1; // THIS WAS THE SOLUTION!!!!!!
 }
+
+/* A solution I discovered was that I had to make all child contents grow within
+the parent container(s). We can make the container class the ancestor (martriach), so
+all other child and descendant content inside the child containers would need to grow within
+the ancestor size as well. */
+
+/* I also had to remove the height and width of the square class, because that was
+preventing the squares from resizing to fit within the container. They needed a DYNAMIC
+resizing, not a static resizing. */
