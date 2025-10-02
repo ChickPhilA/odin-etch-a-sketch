@@ -61,13 +61,13 @@ body {
     justify-content: center;
     align-content: stretch;
 
-    border: 50px solid red;
-    border-radius: 50px;
+    border: 30px solid red;
+    border-radius: 15px;
     margin-top: 125px;
 
     /* Height and width adjusted to 1028px for a full-size view for the user. */
-    height: 1028px;
-    width: 1028px;
+    height: 500px;
+    width: 500px;
 }
 
 /* Rows are contained within the container. */
