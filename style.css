@@ -21,6 +21,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: sandybrown;
 
     margin: 0px;
 }
@@ -80,6 +81,7 @@ body {
 /* Boxes are contained within rows. */
 .square {
     border: 1px solid grey;
+    background-color: white;
     flex-grow: 1; // THIS WAS THE SOLUTION!!!!!!
 }
 
